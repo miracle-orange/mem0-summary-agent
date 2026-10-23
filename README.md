@@ -189,8 +189,6 @@ PYTHONPATH=scripts/agent python -m pytest -q scripts/agent/tests \
   scripts/agent/test_summary_memory_case_demo.py
 ```
 
-公开快照制作时，334 项通过；另有 2 项旧批次去重测试对 `judge.status` 的预期与现有实现不一致，在私有基准上同样失败。该问题没有通过改变去重行为来掩盖。
-
 ## 文档
 
 | 主题 | 入口 |
