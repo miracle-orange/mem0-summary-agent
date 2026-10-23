@@ -1,0 +1,50 @@
+# runtime outputs
+outputs/
+qdrant_chat/
+qdrant_summary/
+qdrant_summary_typed_v1/
+qdrant_summary*/
+qdrant*/
+
+# models / data
+models/
+dataset--mem0_summary/
+*.zip
+*.tar
+*.tar.gz
+*.bin
+*.safetensors
+
+# env / secrets
+.env
+.env.*
+!.env.example
+*.key
+
+# python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# logs
+logs/
+*.log
+
+# editor / os
+.DS_Store
+.vscode/
+.idea/
+
+# notebook checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# trash / temp
+.Trash-*/
+*.swp
+*.swo
+
+# local dataset link/file
+dataset--mem0_summary

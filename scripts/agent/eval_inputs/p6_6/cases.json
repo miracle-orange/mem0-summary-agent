@@ -1,0 +1,67 @@
+{
+  "schema_version": "summary_multi_agent.p6_6_cases.v1",
+  "description": "P6.6 小规模三领域真实 DeepSeek/Qdrant 验收用例。模板丰富度不属于本轮通过条件。",
+  "cases": [
+    {
+      "case_id": "classroom",
+      "domain": "classroom",
+      "user_id": "p66_classroom_chemistry",
+      "project": "p66_classroom_chemistry",
+      "source_type": "classroom_transcript",
+      "history_source_time": "2026-04-08",
+      "current_source_time": "2026-04-15",
+      "history_file": "classroom/history.md",
+      "current_file": "classroom/current.md",
+      "summary_request": "生成结构化课堂摘要，结合历史约束说明本次进展，突出苏妍的状态变化、实验风险、负责人和明确时间安排。",
+      "target_entities": [
+        "苏妍"
+      ],
+      "summary_style": "structured",
+      "manual_focus": [
+        "区分历史要求、已完成事项与本次新增任务",
+        "正确处理今天、明天、本周五和下周三",
+        "不得把其他学生或教师的职责归到苏妍名下"
+      ]
+    },
+    {
+      "case_id": "project_meeting",
+      "domain": "project_meeting",
+      "user_id": "p66_project_starbridge",
+      "project": "p66_project_starbridge",
+      "source_type": "project_meeting",
+      "history_source_time": "2026-05-04",
+      "current_source_time": "2026-05-11",
+      "history_file": "project_meeting/history.md",
+      "current_file": "project_meeting/current.md",
+      "summary_request": "生成面向项目负责人的结构化决策摘要，重点呈现范围变化、依赖关系、阻塞、负责人、交付时间和叶岚需要跟进的事项。",
+      "target_entities": [
+        "叶岚"
+      ],
+      "summary_style": "structured",
+      "manual_focus": [
+        "清楚区分2.3与2.3.1范围",
+        "保留支付回调、回归测试和发布门禁之间的依赖",
+        "不得把风险缓解动作写成已经完成"
+      ]
+    },
+    {
+      "case_id": "policy_report",
+      "domain": "policy_report",
+      "user_id": "p66_policy_retention",
+      "project": "p66_policy_retention",
+      "source_type": "policy_report",
+      "history_source_time": "2026-06-01",
+      "current_source_time": "2026-06-18",
+      "history_file": "policy_report/history.md",
+      "current_file": "policy_report/current.md",
+      "summary_request": "生成供合规评审使用的结构化摘要，对照既有政策说明适用范围、规则变化、例外、待确认事项、责任部门和生效时间。",
+      "target_entities": [],
+      "summary_style": "structured",
+      "manual_focus": [
+        "区分一般工单、未成年人数据和金融争议记录的保留期限",
+        "不得把待法务确认的追溯处理写成已生效规则",
+        "突出政策冲突、例外条件和实施依赖"
+      ]
+    }
+  ]
+}
